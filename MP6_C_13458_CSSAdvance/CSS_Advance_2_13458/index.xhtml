@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Formulir Pendaftaran Lomba</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>Formulir Pendaftaran Lomba Nasional</h1>
+        <p>Silakan isi data tim dan karya terbaik Anda dengan lengkap dan benar.</p>
+    </header>
+
+    <form action="" method="post" enctype="multipart/form-data">
+
+        <fieldset>
+            <legend>Data Tim</legend>
+
+                <div class="form-group">
+                    <label for="nama_tim"><strong>Nama Tim</strong></label>
+                    <input type="text" id="nama_tim" name="nama_tim" placeholder="Masukkan nama tim Anda"/>
+                </div>
+                <div class="form-group">
+                    <label for="nama_ketua"><strong>Nama Ketua</strong></label>
+                    <input type="text" id="nama_ketua" name="nama_ketua" placeholder="Masukkan nama ketua"/>
+                </div>
+                <div class="form-group">
+                    <label for="jumlah_anggota"><strong>Jumlah Anggota</strong></label>
+                    <input type="text" id="jumlah_anggota" name="jumlah_anggota" placeholder="Contoh : 3 orang"/>
+                </div>
+                <div class="form-group">
+                    <label for="prodi"><strong>Program Studi</strong></label>
+                    <select id="prodi" name="prodi">
+                        <option hidden="hidden">--Pilih Program Studi--</option>
+                        <option>Informatika</option>
+                        <option>Sistem Informasi</option>
+                        <option>Teknik Industri</option>
+                    </select>
+                </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Pilihan Lomba</legend>
+                <div class="form-group">
+                    <strong>Kategori Lomba</strong>
+                    <p>
+                        <input type="radio" id="individu" name="kategori" value="Individu" />
+                        <label for="individu">Individu</label>
+                        <input type="radio" id="kelompok" name="kategori" value="Kelompok" />
+                        <label for="kelompok">Kelompok</label>
+                    </p>
+                </div>
+                <div class="form-group">
+                        <strong>Bidang Lomba</strong>
+                        <p>
+                            <input type="checkbox" id="programming" name="bidang" value="Programming" />
+                            <label for="programming">Programming</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="uiux" name="bidang" value="UI/UX Design" />
+                            <label for="uiux">UI/UX Design</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="karya_tulis" name="bidang" value="Karya Tulis" />
+                            <label for="karya_tulis">Karya Tulis</label>
+                        </p>
+                </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informasi Karya</legend>
+                <div class="form-group">
+                    <label for="deskripsi"><strong>Deskripsi Karya</strong></label>
+                    <textarea id="deskripsi" name="deskripsi" rows="5" cols="30" placeholder="Tuliskan deskripsi karya tim Anda disini..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="file_karya"><strong>File Karya</strong></label><br />
+                    <input type="file" id="file_karya" name="file_karya" />
+                </div>
+        </fieldset>
+
+        <div style="text-align: center; margin-top: 20px;">
+            <input type="submit" name="daftar" value="Kirim Pendaftaran" class="tombol_submit"/>
+        </div>
+
+    </form>
+</body>
+</html>
